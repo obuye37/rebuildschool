@@ -1,8 +1,8 @@
 {
-  "name": "nextjs-tailwind-event-landing-page",
+  "name": "rebuildschools",
   "version": "1.0.0",
   "private": true,
-  "author": "Creative Tim",
+  "author": "Precious Douglas",
   "license": "See license in https://www.creative-tim.com/license",
   "homepage": "https://demos.creative-tim.com/nextjs-tailwind-event-landing-page",
   "scripts": {
@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@heroicons/react": "2.0.18",
-    "@material-tailwind/react": "2.1.2",
-    "next": "13.4.0",
+    "@material-tailwind/react": "^2.1.2",
+    "next": "^13.5.11",
     "react": "18",
     "react-dom": "18"
   },
