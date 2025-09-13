@@ -5,33 +5,22 @@ import { PlayIcon } from "@heroicons/react/24/solid";
 
 function Hero() {
   return (
-    <div className="relative min-h-screen w-full bg-[url('/image/event.jpeg')] bg-cover bg-no-repeat">
-    <div className="absolute inset-0 h-full w-full bg-gray-900/60" />
-    <div className="grid min-h-screen px-8">
-      <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
-        <Typography as="h3" variant="h3" color="white" className="mb-2" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          29-31 August @ New York
-        </Typography>
-        <Typography variant="h1" color="white" className="lg:max-w-3xl" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          AI Conference 2023: Unlocking the Future
-        </Typography>
-        <Typography
-            variant="lead"
-            color="white"
-            className="mt-1 mb-12 w-full md:max-w-full lg:max-w-2xl" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
-          Join us for the most anticipated event of the year - the AI
-          Conference 2023!
-        </Typography>
-        <div className="flex items-center gap-4">
-          <Button variant="gradient" color="white" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-            Get started
-          </Button>
-          <IconButton className="rounded-full bg-white p-6" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-            <PlayIcon className="h-4 w-4 text-gray-900" />
-          </IconButton>
-        </div>
+    <div className="relative max-h-screen w-full bg-white flex overflow-hidden">
+      <div className="h-full w-[40%] flex justify-center items-center m-auto text-center p-8">
+        <p className="text-xl md:text-2xl text-gray-800">
+          Turning creators fees into hope and a brighter future for kids learning in dilapidated school in Nigeria.
+        </p>
+          
       </div>
-    </div>
+
+      <div className="h-full w-[60%] clipped-img">
+        <img src="/image/image-3.jpg" alt="School" className="h-full w-full object-cover" />
+      </div>
+    
+    {/* <video className="h-full w-full rounded-lg" controls autoPlay muted>
+      <source src="/video/school-vid.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video> */}
   </div>
   );
 }

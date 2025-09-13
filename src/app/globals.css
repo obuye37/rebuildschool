@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.libertinus-keyboard-regular {
+  font-family: "Libertinus Keyboard", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.clipped-img {
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+  object-fit: contain;
+  height: auto;
+    width: 70%;
+}

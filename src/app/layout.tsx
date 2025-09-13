@@ -1,11 +1,17 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import { Layout, FixedPlugin } from "@/components";
+import { Roboto, Bebas_Neue } from "next/font/google";
+import { Layout } from "@/components";
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700", "900"],
+  weight: "400",
+  display: "swap",
+});
+
+const bebas = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
   display: "swap",
 });
 
@@ -25,15 +31,15 @@ export default function RootLayout({
       <head>
         <script
           defer
-          data-site="YOUR_DOMAIN_HERE"
+          data-site="rebuildschool.com"
           src="https://api.nepcha.com/js/nepcha-analytics.js"
         ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&display=swap" rel="stylesheet" />
       </head>
       <body className={roboto.className}>
         <Layout>
           {children}
-          <FixedPlugin />
         </Layout>
         <link
           rel="stylesheet"

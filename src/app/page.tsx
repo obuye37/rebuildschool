@@ -1,5 +1,5 @@
 // components
-import { Navbar, Footer } from "@/components";
+import { Footer, Navbar } from "@/components";
 
 // sections
 import Hero from "./hero";
@@ -13,10 +13,10 @@ export default function Portfolio() {
     <>
       <Navbar />
       <Hero />
-      <SponsoredBy />
       <AboutEvent />
       <OurStats />
       <EventContent />
+      <SponsoredBy />
       <Footer />
     </>
   );
