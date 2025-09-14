@@ -6,7 +6,10 @@ import { PlayIcon } from "@heroicons/react/24/solid";
 function Hero() {
   return (
     <div className="relative max-h-screen w-full bg-white flex overflow-hidden">
-      <div className="h-full w-[40%] flex justify-center items-center m-auto text-center p-8">
+      <div className="h-full w-[45%] flex flex-col justify-center items-center m-auto text-center p-8">
+        <Typography variant="h1" className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          Rebuild School
+        </Typography>
         <p className="text-xl md:text-2xl text-gray-800">
           Turning creators fees into hope and a brighter future for kids learning in dilapidated school in Nigeria.
         </p>
