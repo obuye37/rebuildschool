@@ -22,33 +22,14 @@ export function Navbar() {
 
   const handleOpen = () => setOpen((cur) => !cur);
 
-  React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
-    );
-  }, []);
-
-  React.useEffect(() => {
-    function handleScroll() {
-      if (window.scrollY > 0) {
-        setIsScrolling(true);
-      } else {
-        setIsScrolling(false);
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+ 
 
   return (
     <MTNavbar
       shadow={false}
       fullWidth
       blurred={false}
-      color={isScrolling ? "white" : "transparent"}
+      color= "transparent"
       className="fixed top-0 z-50 border-0" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}    >
       <div className="container mx-auto flex items-center justify-between">
         <img src="/logos/logo.jpg" alt="Logo" className="h-24 rounded-full" />

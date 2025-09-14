@@ -1,5 +1,5 @@
 // components
-// import { Navbar } from "@/components";
+import { Navbar } from "@/components";
 
 // sections
 import Hero from "./hero";
@@ -8,6 +8,7 @@ import Hero from "./hero";
 export default function Porfolio() {
   return (
     <>
+      <Navbar />
       <Hero />
     </>
   );
