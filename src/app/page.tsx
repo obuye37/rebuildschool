@@ -1,23 +1,10 @@
-// components
-import { Footer, Navbar } from "@/components";
+import React from "react";
 
-// sections
-import Hero from "./hero";
-import SponsoredBy from "./sponsored-by";
-import AboutEvent from "./about-event";
-import OurStats from "./our-stats";
-import EventContent from "./event-content";
 
-export default function Portfolio() {
+export default function Home() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <AboutEvent />
-      <OurStats />
-      <EventContent />
-      <SponsoredBy />
-      <Footer />
-    </>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <h1 className="text-4xl font-bold">Welcome to the Home Page</h1>
+    </main>
   );
 }
