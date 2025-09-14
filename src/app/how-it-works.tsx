@@ -2,7 +2,7 @@ import React from 'react'
 
 const HowItWorks = () => {
   return (
-    <div className='flex flex-col items-center gap-4 max-h-screen'>
+    <div className='flex flex-col items-center gap-4 max-h-screen py-20'>
       <h2 className='text-2xl font-bold'>How it Works</h2>
       <div className='flex flex-col gap-2 w-3/4 justify-center items-center px-4 py-8'>
         <div className='flex h-[15rem] gap-8 justify-center items-center overflow-hidden'>

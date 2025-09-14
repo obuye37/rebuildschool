@@ -2,10 +2,10 @@
 
 function Hero() {
   return (
-    <div className="relative min-h-screen w-full bg-white flex overflow-hidden justify-center items-center">
-      <div className="h-full w-[45%] flex flex-col justify-center items-center m-auto text-center p-8">
+    <div className="relative md:flex min-h-screen w-full bg-green-500 overflow-hidden justify-center items-center ">
+      <div className="h-screen w-full md:w-[45%] flex flex-col justify-center items-center m-auto text-center p-8">
         <img src="/logos/logo.jpg" alt="Rebuild School logo" className="h-[6rem] w-[6rem] rounded-full mb-10" />
-        <p className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
+        <p className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 righteous-bold">
           Rebuild School
         </p>
         <p className="text-xl md:text-2xl text-gray-800">
@@ -14,7 +14,7 @@ function Hero() {
           
       </div>
 
-      <div className="h-screen w-[60%] clipped-img">
+      <div className="h-screen w-full md:w-[60%] clipped-img">
         <video className="h-screen w-full object-cover" controls autoPlay muted>
           <source src="/video/school-vid.mp4" type="video/mp4" />
           Your browser does not support the video tag.

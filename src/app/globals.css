@@ -45,3 +45,11 @@ html {
   font-style: bold;
 }
 
+
+@media (max-width: 768px) {
+  .clipped-img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 100%;
+    height: auto;
+  }
+}

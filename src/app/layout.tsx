@@ -1,8 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto, Bebas_Neue } from "next/font/google";
-// import { Layout } from "@/components";
-import Layout from "@/components/layout";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -42,9 +40,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
       </head>
       <body className={roboto.className}>
-        <Layout>
           {children}
-        </Layout>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
