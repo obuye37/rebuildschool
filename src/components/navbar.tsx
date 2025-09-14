@@ -3,17 +3,7 @@ import {
   Navbar as MTNavbar,
   Collapse,
   Button,
-  IconButton,
-  Typography,
 } from "@material-tailwind/react";
-import {
-  RectangleStackIcon,
-  UserCircleIcon,
-  CommandLineIcon,
-  Squares2X2Icon,
-  XMarkIcon,
-  Bars3Icon,
-} from "@heroicons/react/24/solid";
 
 
 export function Navbar() {
@@ -41,14 +31,8 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900">
-
+            <img src="/logos/logo.jpg" alt="Logo" className="h-18 rounded-full mx-auto" />
           </ul>
-          <div className="mt-6 flex items-center gap-4">
-            <Button variant="text" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>Log in</Button>
-            <a href="https://www.materila-tailwind.com/blocks" target="_blank">
-              <Button color="gray" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>blocks</Button>
-            </a>
-          </div>
         </div>
       </Collapse>
     </MTNavbar>
