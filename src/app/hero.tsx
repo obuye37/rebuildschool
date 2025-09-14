@@ -1,12 +1,10 @@
 "use client";
 
-import { Typography } from "@material-tailwind/react";
-
 function Hero() {
   return (
-    <div className="relative max-h-screen w-full bg-white flex overflow-hidden">
-      <img src="/logos/logo.jpg" alt="Rebuild School logo" className="h-full w-full object-cover" />
+    <div className="relative max-h-screen w-full bg-white flex overflow-hidden justify-center items-center">
       <div className="h-full w-[45%] flex flex-col justify-center items-center m-auto text-center p-8">
+        <img src="/logos/logo.jpg" alt="Rebuild School logo" className="h-[6rem] w-[6rem] rounded-full mb-10" />
         <p className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
           Rebuild School
         </p>
