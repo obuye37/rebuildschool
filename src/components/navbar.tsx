@@ -18,7 +18,6 @@ import {
 
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
-  const [isScrolling, setIsScrolling] = React.useState(false);
 
   const handleOpen = () => setOpen((cur) => !cur);
 
@@ -34,9 +33,7 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <img src="/logos/logo.jpg" alt="Logo" className="h-24 rounded-full" />
         <ul
-          className={`ml-10 hidden items-center gap-6 lg:flex ${
-            isScrolling ? "text-gray-900" : "text-white"
-          }`}
+          className="ml-10 hidden items-center gap-6 lg:flex text-gray-800"
         >
           
         </ul>
