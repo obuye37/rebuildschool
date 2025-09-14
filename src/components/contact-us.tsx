@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='h-[20rem] bg-green-100 text-gray-800 flex flex-col justify-center items-center text-center p-8 gap-4'>
-      <p>X:  https://x.com/Rebuild_School</p>
-      <p>REBUILD is live every day  on PUMPFUN stream.</p>
+    <div className='bg-green-950 text-gray-100 flex flex-col justify-center items-center text-center p-8 gap-4'>
+      <p>X:  <Link href="https://x.com/Rebuild_School">https://x.com/Rebuild_School</Link></p>
+      <p> <span className='font-bold text-green-500'>REBUILD</span> is live every day  on <span className='font-bold'>PUMPFUN</span> stream.</p>
     </div>
   )
 }
