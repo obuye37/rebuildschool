@@ -5,10 +5,10 @@ function Hero() {
     <div className="relative md:flex md:min-h-screen w-full h-full md:bg-green-500 overflow-hidden justify-center items-center ">
       <div className="md:h-screen w-full md:w-[45%] flex flex-col justify-center items-center m-auto text-center md:p-8 py-4">
         <img src="/logos/logo.jpg" alt="Rebuild School logo" className=" h-14 w-14 md:h-[6rem] md:w-[6rem] rounded-full md:mb-10 mb-4" />
-        <p className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 righteous-regular">
+        <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 righteous-regular">
           Every Child Deserves Quality Education 
         </p>
-        <p className="text-xl md:text-2xl text-gray-800 hidden md:block">
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom" className="text-xl md:text-2xl text-gray-800 hidden md:block">
           Rebuild Turns creators fees into hope and a brighter future for kids learning in dilapidated school in Nigeria.
         </p>
           
